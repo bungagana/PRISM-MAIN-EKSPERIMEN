@@ -1,0 +1,11 @@
+numpy
+scipy
+opencv-python
+scikit-image
+scikit-learn
+pandas
+joblib
+
+# webapp/app.py only (not required for the core PRISM pipeline)
+streamlit
+pillow

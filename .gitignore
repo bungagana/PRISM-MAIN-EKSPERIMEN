@@ -1,0 +1,27 @@
+# --- Private research data: NOT for public release ---
+input/
+
+# --- Large raw synthesis arrays (regenerate via scripts/02_synthesize.py) ---
+# The .jpg previews under output/synthetic/jpg/ ARE published; the .npy
+# tensors they were dumped from are not (float32, ~1.2GB total).
+output/synthetic/artifacts/*.npy
+
+# --- Python / editor noise ---
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+*.egg-info/
+
+# --- OS noise ---
+.DS_Store
+Thumbs.db
+
+# local run logs
+output/*.log
+
+# per user: only classifier model + synthetic images are published
+output/quality_metrics/
+output/classifier/tables/
+output/synthetic/artifacts/

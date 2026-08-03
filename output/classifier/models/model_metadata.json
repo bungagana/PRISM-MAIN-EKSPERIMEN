@@ -1,0 +1,27 @@
+{
+  "best_model_name": "Linear SVM (C=1)",
+  "phases_in_label_order": [
+    "Lag",
+    "Log",
+    "Stationary",
+    "Death"
+  ],
+  "label_map": {
+    "Lag": 0,
+    "Log": 1,
+    "Stationary": 2,
+    "Death": 3
+  },
+  "feature_dim": 117,
+  "feature_extractor": "prism.features.extract_cielab_features",
+  "preprocessing": {
+    "resize": [
+      224,
+      224
+    ],
+    "color_order": "RGB",
+    "value_range": "[0, 1] float32 (uint8 / 255.0)"
+  },
+  "random_seed": 42,
+  "split_seed": 165
+}
